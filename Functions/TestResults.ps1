@@ -30,6 +30,7 @@ function Export-PesterResults
     switch ($Format)
     {
         'NUnitXml'       { Export-NUnitReport -PesterState $PesterState -Path $Path }
+        'CliXml'         { $PesterState | Export-Clixml -Path $Path -Force -Confirm:$false -Depth 2 }
 
         default
         {
