@@ -37,6 +37,7 @@ FunctionsToExport = @(
     'New-Fixture'
     'Get-TestDriveItem'
     'Invoke-Pester'
+    'Invoke-ParallelPester'
     'Setup'
     'In'
     'InModuleScope'
